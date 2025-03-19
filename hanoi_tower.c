@@ -6,18 +6,18 @@ void hanoi(int n, char from, char middle, char to)
 {
     if (n >= 1) {
         hanoi(n - 1, from, to, middle);
-        printf("%d¹ø ¿øÆÇÀ» %c¿¡¼­ %c·Î ÀÌµ¿\n", n, from, to);
+        printf("%dï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ %cï¿½ï¿½ï¿½ï¿½ %cï¿½ï¿½ ï¿½Ìµï¿½\n", n, from, to);
         num++;
         hanoi(n - 1, middle, from, to);
     }
 }
 int main() {
     int n;
-    printf("¿øÆÇÀÇ °³¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
-    scanf_s("%d", &n);
+    printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï½Ã¿ï¿½: ");
+    scanf("%d", &n);
 
     hanoi(n, 'A', 'B', 'C');
-    printf("ÃÑ ÀÌµ¿ È½¼ö: %d", num);
+    printf("ï¿½ï¿½ ï¿½Ìµï¿½ È½ï¿½ï¿½: %d", num);
     
     return 0;
 }
